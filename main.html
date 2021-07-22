@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>To Doo Listtt</title>
+        <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style2.css">
+        
+    </head>
+
+    <body>
+        
+        <div class="todo-wrapper">
+           
+            <h2><img src="todo.png" width="400" height="64" alt=""></h2>
+            <button id="add-button" class="pretty-button"><img src="add.png" width="144" height="24" alt=""></button>
+            <div id="control-wrapper">
+                <button id="clear-button" class="pretty-button"><img src="clearr.png" width="48" height="48" alt=""></button>
+                <button id="empty-button" class="pretty-button"><img src="resett.png" width="48" height="48" alt=""></button>
+                <button id="save-button" class="pretty-button"><img src="savee.png" width="48" height="48" alt=""></button>
+            </div>
+            <!--<form name="todo-adder2">
+                <input type="text" id="todo-entry-box2" />
+            </form> -->
+            <br />
+            <ol id="todo-list">
+            </ol>
+        </div>
+
+
+
+        <div id="modal">
+            <div class="modal_content">
+                <h3><img src="memo.png" width="150" height="44" alt=""></h3>
+                <button type="button" id="modal_close_btn"><img src="x.png" width="30" height="30" alt=""></button>
+                <button type="button" id="add2-button"><img src="check.png" width="30" height="30" alt=""></button>
+                <form name="todo-adder">
+                    <textarea cols="20" rows="50" placeholder="Enter your text" id="todo-entry-box"></textarea>
+                    
+                </form>
+            </div>
+        
+            <div class="modal_layer"></div>
+        </div>
+        <script src="script.js"></script>
+        <script>
+            document.getElementById("add-button").onclick = function() {
+                document.getElementById("modal").style.display="block";
+            }
+            document.getElementById("add2-button").onclick = function() {
+                document.getElementById("modal").style.display="none";
+            }
+           
+            document.getElementById("modal_close_btn").onclick = function() {
+                document.getElementById("modal").style.display="none";
+            }   
+        </script>
+    </body>
+</html>

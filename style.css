@@ -1,0 +1,106 @@
+body {
+    background-color: #ffffff;
+    background-image: url("note_ex.png");
+}
+
+.todo-wrapper {
+    margin-top: 50px;
+    background-color: rgba(0, 0, 0, 0);
+    margin-left: 100px;
+    margin-right: 3px;
+    padding: 30px;
+}
+
+.todo-wrapper h2 {
+    flex: wrap;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    display: inline;
+    font-size: 65px;
+    font-family: "cursive";
+}
+
+.todo-wrapper #control-wrapper {
+    display: inline;
+    float: right;
+}
+
+.todo-wrapper #add-button {
+    margin-top: 30px;
+    display: inline;
+}
+
+.todo-wrapper p {
+    font-style: italic;
+    color: rgb(92, 92, 92);
+    margin: 5px 0;
+}
+
+.todo-wrapper ol {
+    margin: 65px 0;
+}
+
+.todo-wrapper ol li{
+    margin-top: -25px;
+    margin-bottom: 0px;
+    padding: 1px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+    font-family: 'Caveat','Nanum Pen Script', cursive;
+    font-size: 60px;
+}
+
+.todo-wrapper .completed {
+    text-decoration: line-through rgb(255,0,0);
+    text-decoration-thickness: 1px;
+    text-decoration-style: double ;
+}
+
+.todo-wrapper .pretty-button {
+    margin: 0px 10px;
+    padding: 5px 2px;
+    border-radius: 2px;
+    border: none;
+    background-color: rgba(0,0,0,0);
+    text-align: center;
+    display: inline-block;
+    font-size: small;
+}
+
+.todo-wrapper .pretty-button:hover {
+    cursor: pointer;
+    opacity: 0.75;
+}
+
+.todo-wrapper input {
+    padding: 3px 6px;
+}
+
+.todo-wrapper form {
+    display: inline-block;
+}
+
+@media only screen and (min-width: 1400px) {
+    .todo-wrapper {
+        width: 90%;
+    }
+
+    /*.todo-wrapper input {
+        width: 600px;
+    }*/
+    
+}
+
+@media only screen and (max-width: 1399px) and (min-width: 750px) {
+    .todo-wrapper {
+        width: 75%;
+    }
+
+    /*.todo-wrapper input {
+        width: 400px;
+    }*/
+}
